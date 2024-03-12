@@ -1,0 +1,260 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Redefine estilos padrão para todos os elementos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Define estilos para o body */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+/* Define estilos para o header */
+header {
+  background: #f9f9f9;
+}
+
+/* Define estilos para todas as imagens */
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Define estilos para imagens dentro da navbar */
+.navbar img {
+  width: 34px;
+  opacity: 0.85;
+}
+
+/* Define estilos para o banner-wrapper */
+.banner-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.6rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-height: 100vh;
+}
+
+/* Define estilos para a navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Define estilos para o elemento brand da navbar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Define estilos para o texto dentro do brand da navbar */
+.navbar-brand span {
+  margin-left: 0.4rem;
+  color: #222;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* Define estilos para os ícones de navegação */
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Define estilos para o último ícone de navegação */
+.nav-icons a:last-child {
+  margin-left: 1rem;
+  display: block;
+  color: #222;
+}
+
+/* Define estilos para o conteúdo do banner */
+.banner-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  justify-content: center;
+}
+
+/* Define estilos para o título H2 à esquerda do banner */
+.banner-left h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* Define estilos para o elemento span dentro do H2 à esquerda do banner */
+.banner-left span {
+  display: block;
+  font-size: 4.4rem;
+}
+
+/* Define estilos para o parágrafo à esquerda do banner */
+.banner-left p {
+  margin: 1.6rem 0;
+  line-height: 1.7;
+}
+
+/* Define estilos para o botão à esquerda do banner */
+.banner-left button {
+  background: #222;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.65rem 2rem;
+  border: 3px solid #222;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+/* Define estilos para o botão ao passar o mouse */
+.banner-left button:hover {
+  background: #fff;
+  color: #222222;
+}
+/* Remove o contorno do botão ao receber foco */
+.banner-left button:focus {
+    outline: 0;
+  }
+  
+  /* Define estilos para a seção color-content */
+  .color-content {
+    margin-top: 3.2rem;
+  }
+  
+  /* Define estilos para o título H3 dentro de color-content */
+  .color-content h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+  
+  /* Define estilos para cada elemento de cor (class .color) */
+  .color {
+    width: 35px;
+    height: 35px;
+    background: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+  
+  /* Define a cor de fundo do elemento .color-black */
+  .color-black {
+    background-color: #242424;
+  }
+  
+  /* Define a cor de fundo do elemento .color-blue */
+  .color-blue {
+    background-color: #085ea0;
+  }
+  
+  /* Define a cor de fundo do elemento .color-yellow */
+  .color-yellow {
+    background-color: #c0b50d;
+  }
+  
+  /* Define a cor de fundo do elemento .color-red */
+  .color-red {
+    background-color: #8b0516;
+  }
+  
+  /* Define a cor de fundo do elemento .color-white */
+  .color-white {
+    background-color: #ededed;
+  }
+  
+  /* Define a cor de fundo do elemento .color-green */
+  .color-green {
+    background-color: #149311;
+  }
+  
+  /* Define a cor de fundo do elemento .color-orange */
+  .color-orange {
+    background-color: #d9791b;
+  }
+  
+  /* Define a cor de fundo do elemento .color-pink */
+  .color-pink {
+    background-color: #eb768f;
+  }
+  
+  /* Aplica sombra ao passar o mouse sobre o elemento .color */
+  .color:hover {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Aplica a mesma sombra ao elemento que possui a classe .active-color */
+  .active-color {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Define estilos para o grupo de cores (class .color-groups) */
+  .color-groups {
+    padding: 1rem 0;
+    display: flex;
+  }
+  
+  /* Media Queries para telas com largura máxima de 992px */
+  @media screen and (max-width: 992px) {
+    /* Aumenta o padding inferior da navbar */
+    .navbar {
+      padding-bottom: 3rem;
+    }
+  
+    /* Altera o layout do banner-content para uma única coluna e centraliza o texto */
+    .banner-content {
+      grid-template-columns: 100%;
+      text-align: center;
+    }
+  
+    /* Reduz o tamanho do título H2 à esquerda do banner */
+    .banner-left h2 {
+      font-size: 2rem;
+    }
+  
+    /* Reduz o tamanho do elemento span dentro do H2 à esquerda do banner */
+    .banner-left span {
+      font-size: 2.8rem;
+    }
+  
+    /* Centraliza o grupo de cores */
+    .color-groups {
+      display: flex;
+      justify-content: center;
+    }
+  
+    /* Remove a margem direita do último elemento de cor */
+    .color:last-child {
+      margin-right: 0;
+    }
+  }
+  
